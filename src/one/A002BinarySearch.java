@@ -30,7 +30,6 @@ public class A002BinarySearch {
                 StdOut.println(key);
             }
         }
-        int a;
     }
 
     public void A113() {
