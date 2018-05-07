@@ -28,6 +28,7 @@ public class A002BinarySearch {
             int key = StdIn.readInt();
             if (rank(key, whitelist) == -1) {
                 StdOut.println(key);
+
             }
         }
     }
