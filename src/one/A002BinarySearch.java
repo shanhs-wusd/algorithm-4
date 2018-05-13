@@ -42,16 +42,6 @@ public class A002BinarySearch {
 
     }
 
-    public static double sqrt(double c) {
-        if (c < 0) return Double.NaN;
-        double err = 1e -15;
-        double t = c;
-        while (Math.abs(t - c/t) > err * t) {
-            t = (c/t + t) / 2.0;
-        }
-        return t;
-    }
-
     /**
      * 计算一个整数的绝对值
      * @param x
@@ -92,7 +82,7 @@ public class A002BinarySearch {
      */
     public static double sqrt(double c) {
         if (c < 0) return Double.NaN;
-        double err = 1e -15;
+        double err = 1e-15;
         double t = c;
         while (Math.abs(t - c/t) > err * t) {
             t = (c/t + t) / 2.0;
@@ -111,7 +101,7 @@ public class A002BinarySearch {
     }
 
     /**
-     * 计算调和级数
+     * 计算调和级数 1/1 + 1/2 + ...+ 1/N;
      * @param N
      * @return
      */

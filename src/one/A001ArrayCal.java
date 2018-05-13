@@ -1,6 +1,6 @@
 package one;
 
-public class ArrayCal {
+public class A001ArrayCal {
     /**
      * 数组最大值
      * @param a
