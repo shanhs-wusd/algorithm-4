@@ -2,3 +2,5 @@
 *.class
 # TXT
 *.txt
+#idea
+.idea
