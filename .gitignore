@@ -3,7 +3,8 @@
 # TXT
 *.txt
 #ideaA
-.idea
+.idea/
 .bin
 .csv
+out/
 algs4-data
