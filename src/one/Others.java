@@ -1,5 +1,7 @@
 package one;
 
+import edu.princeton.cs.algs4.StdOut;
+
 public class Others {
     /**
      * 最大公约数
@@ -16,5 +18,6 @@ public class Others {
 
     public static void main(String[] args) {
         System.out.println(gcd(6, 4));
+        StdOut.println("test");
     }
 }
