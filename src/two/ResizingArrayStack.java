@@ -37,26 +37,20 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return new StackIterator<>(a, N);
+        return new StackIterator();
     }
 
-    private static class StackIterator<Item> implements Iterator<Item> {
-        private Item[] a;
-        private int N;
-        private int M = 0;
-        public StackIterator(Item[] a, int N) {
-            this.a = a;
-            this.N = N;
-        }
+    private class StackIterator implements Iterator<Item> {
+        private int i = N;
 
         @Override
         public boolean hasNext() {
-            return N != M;
+            return i != 0;
         }
 
         @Override
         public Item next() {
-            return a[M++];
+            return a[--i];
         }
     }
 
