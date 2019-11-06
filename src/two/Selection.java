@@ -1,5 +1,6 @@
 package two;
 
+import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
@@ -14,12 +15,10 @@ public class Selection {
     }
 
     public static void sort(Comparable[] a) {
-        for (int i = 0; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length; i++) {
             int minIndex = i;
             for (int j = i + 1; j < a.length; j++) {
-                if (less(a[j], a[minIndex])) {
-                    minIndex = j;
-                }
+                if (Example.less(a[j], a[minIndex])) minIndex = j;
             }
             exch(a, minIndex, i);
         }
@@ -36,8 +35,8 @@ public class Selection {
     }
 
     public static void show(Comparable[] arr) {
-        for (Comparable a : arr) {
-            StdOut.println(a);
+        for (int i = 0; i < arr.length; i++) {
+//            StdDraw.
         }
     }
 
