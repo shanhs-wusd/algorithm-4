@@ -18,6 +18,6 @@ public class Others {
 
     public static void main(String[] args) {
         System.out.println(gcd(6, 4));
-        StdOut.println("test");
+        StdOut.println("src/test");
     }
 }
