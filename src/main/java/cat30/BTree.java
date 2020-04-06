@@ -1,10 +1,6 @@
 package cat30;
 
 import edu.princeton.cs.algs4.StdRandom;
-import lombok.ToString;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  * @author wusd
@@ -69,11 +65,9 @@ public class BTree {
             Integer key = StdRandom.uniform(1000);
             String val = "x";
             bTree.put(key, val);
-            assertEquals(i, bTree.size());
         }
     }
 
-    @Test
     public void testNullRef() {
         nullRef();
     }
@@ -88,7 +82,6 @@ public class BTree {
         nullRef = new Model("d");
     }
 
-    @ToString
     static class Model {
         private String id;
 
