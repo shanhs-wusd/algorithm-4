@@ -9,7 +9,7 @@ import edu.princeton.cs.algs4.StdRandom;
 public class BTree {
     private Node root;
 
-    private class Node {
+    protected class Node {
         private Integer key;
         private String val;
         private Node left, right;
